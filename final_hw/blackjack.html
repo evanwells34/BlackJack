@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BlackJack</title>
+    <link href="css/main.css" rel="stylesheet">
+    <script src="js/game.js"></script>
+</head>
+<body>
+<div id="grid-container">
+<header>
+    <h2>BlackJack Plus</h2>
+    <img id="headimg" src="images/allSuites.png" alt="none"/>
+</header>
+<div class="left">
+    <div id="startScreen">
+<h2> Place your bet</h2>
+    Enter Bet to Start
+    <br/>
+    Bet:  <input type="text" name="bet" id="uBet" min="1" max="500" />
+    <button type="button" class="button" onClick="onClick();">Bet</button>
+    </div>
+    <br/>
+    <h4 id="hand-header">Hand Status</h4>
+    <table id="hand-table" border="1px solid black">
+        <tr> <th>Player</th> <th>Hand Pts</th> <th>Num Hits</th> </tr>
+        <tr> <td> User</td>  <td id="userpts">0</td> <td id="numHits">0</td>  </tr>
+        <tr>  <td>Dealer</td> <td id="dealpts"> 0</td> <td id="numHitsDeal">0</td>  </tr>
+    </table>
+    <h4 id="overall-header">Overall Status</h4>
+    <table id="overall-table" border="1px solid black">
+        <tr> <th>Balance</th> <th>Bet</th> <th >Games</th> <th>Wins</th> <th>Losses</th></tr>
+        <tr> <td id="balance"> 1000 </td> <td id="betInTable">0</td> <td id="gamesPlayed">0</td> <td id="userWins">0</td> <td id="userLosses">0</td></tr>
+    </table>
+</div>
+<div class="center">
+    <div id="gameTable">Game Goes Here
+
+    </div>
+</div>
+    <footer class="bottom">
+        Game by Evan Wells - 2023
+    </footer>
+</div>
+</body>
+</html>

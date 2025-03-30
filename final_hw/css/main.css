@@ -1,0 +1,111 @@
+#headimg{
+    width: 100px;
+}
+#grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 100px 500px;
+    font-size: .7rem;
+    border: 1px solid black;
+}
+header {
+    display: inline;
+    background-color: yellow;
+    list-style:none;
+    grid-column: 1/4;
+    text-align: center;
+
+}
+.left {
+    background-color:palegoldenrod;
+    border:1px solid black;
+    padding-left: 40px;
+}
+button{
+    background-color: dodgerblue;
+    border-radius: 12px;
+}
+#hand-header {
+    color: red;
+}
+#overall-header {
+    color: blue;
+}
+#hand-table{
+    background-color: white;
+
+}
+#overall-table{
+    background-color: white;
+
+}
+.center {
+    background-color:palegoldenrod;
+    border:1px solid black;
+    padding-left: 20px;
+}
+#gameTable{
+    padding: 10px;
+    font-size: 1.4rem;
+    height: 900px;
+}
+.userCardImage {
+    width: 100px;
+}
+.dealerCardImage {
+    width: 100px;
+}
+#dealerCardFaceDown {
+    width: 100px;
+}
+.bottom {
+    display: inline;
+    background-color: yellow;
+    list-style: none;
+    grid-column: 1/4;
+    text-align: center;
+}
+.resultImage {
+  width: 100px;
+}
+.loseImage{
+    width: 70px;
+}
+.bjImg{
+    width: 60px;
+}
+#bust {
+    animation-name: rotateImage;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotateImage {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px){
+    header, .bottom{
+        background-color: lightgreen;
+        text-align: center;
+    }
+    #overall-table{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #hand-table{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #grid-container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
